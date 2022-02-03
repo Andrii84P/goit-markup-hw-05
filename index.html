@@ -43,7 +43,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <!-- Секция особености -->
         <section class="features-section">
@@ -159,7 +159,7 @@
             </li>
             <li class="team-item">
                 <img src="./images-mozjpeg/teamcard2.jpg" alt="Frontend Developer" width="270">
-                                <div class="team-item-content">
+                    <div class="team-item-content">
                 <h3 class="officer-name">Ольга Репина</h3>
                 <p class="officer-position" lang="en">Frontend Developer</p>
                 <ul class="social-networking-list">
@@ -192,7 +192,7 @@
                         </a>
                     </li>
                 </ul>
-                        </div>
+                    </div>
             </li>
             <li class="team-item">
                 <img src="./images-mozjpeg/teamcard3.jpg" alt="Marketing" width="270">
@@ -377,5 +377,15 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-batton" type="button" data-modal-close>
+                <svg class="modal-close" width="18" height="18">
+                    <use href="./images-hw4/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
     </body>
 </html>
