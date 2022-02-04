@@ -535,7 +535,7 @@ a {
   color: var(--accent-coolor);
 }
 
-/*--Присоединяйся--*/
+/*--Join--*/
 
 .join {
   margin-left: 70px;
@@ -579,7 +579,7 @@ a {
   fill: currentColor;
 }
 
-/* ----Модальное окно---- */
+/* ----Modal Window---- */
 
 .backdrop {
   position: fixed;
@@ -657,7 +657,7 @@ a {
   background: var(--buttons-background-color);
   color: var(--buttons-color-text);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), bbox-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-button:hover,
@@ -677,7 +677,7 @@ a {
 .projects-list {
   display: flex;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
   flex-wrap: wrap;
   text-align: left;
 }
@@ -690,14 +690,23 @@ a {
   background: #ffffff;
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.project-link {
+  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-link:hover .project-overlay-text,
+.project-link:focus .project-overlay-text {
+  transform: translateY(0);
 }
 
 .project-item-content {
@@ -720,9 +729,6 @@ a {
   color: var(--primary-color-text);
 }
 
-.project-item:hover .project-overlay-text {
-  transform: translateY(0);
-}
 .project-overlay {
   position: relative;
   overflow: hidden;
@@ -736,7 +742,7 @@ a {
   padding: 65px 25px;
   font-size: 18px;
   line-height: 1.56;
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
